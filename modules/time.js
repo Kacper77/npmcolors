@@ -8,7 +8,7 @@ function formatTime(seconds) {
     } else {
         var hour = Math.floor(seconds / 3600);
         var minutes = Math.floor(seconds % 3600 / 60);
-        var sec = Math.floor(seconds % 3600 / 60);
+        var sec = Math.floor(seconds % 3600 % 60);
         return hour + ' hours ' + minutes + ' min. ' + sec + ' sek.';
     }
 }
